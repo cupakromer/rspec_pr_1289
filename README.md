@@ -10,9 +10,9 @@ This is a minimal Ruby on Rails application that illustrates the [rspec-rails](h
 The specific issue at hand involves:
 
 * A view spec for a view template located at the root of `/app/views`:
-    * `/app/views/test_view.html.erb`
-    * `/spec/views/test_view.erb_spec.rb`
-* A class named `Helper` elsewhere in the specs - in this case, within `/spec/requests/posts_spec.rb`
+    * [`/app/views/test_view.html.erb`](app/views/test_view.html.erb)
+    * [`/spec/views/test_view.erb_spec.rb`](spec/views/test_view.erb_spec.rb)
+* A class named `Helper` elsewhere in the specs - in this case, within [`/spec/requests/posts_spec.rb`](spec/requests/posts_spec.rb#L11)
 
 Typically view specs use the path to the view to discern the appropriate name of a helper to be auto-loaded, e.g. a view spec `RSpec.describe "posts/edit", :type => :view` would auto-load `PostsHelper`.
 
