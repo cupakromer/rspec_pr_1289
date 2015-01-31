@@ -7,4 +7,10 @@ RSpec.describe "Posts", :type => :request do
       expect(response).to have_http_status(200)
     end
   end
+
+  class Helper
+    def self.test_method
+      puts "This is a test."
+    end
+  end
 end
